@@ -39,11 +39,8 @@ emelkedni a többi fejlesztő közül! Egy idő után ezek a dolgok rutinná fog
 Példa: Human osztály, név és életkor attribútummal és bemutatkozás metódussal.
 
 #### Újdonságok
-
-    1. Láthatóság
-    2. Property
-    3. Osztály típusú attribútumok pl.: Address
-    4. Referenciák , immutable és mutable objektumok(elmélet)
+    1. Osztály típusú attribútumok pl.: Address
+    2. Referenciák , immutable és mutable objektumok(elmélet)
 
 ## Feladat:
 
