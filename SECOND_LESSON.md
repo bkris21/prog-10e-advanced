@@ -45,7 +45,7 @@ Szintaxis: `newlist = [expression for item in iterable if condition == True]`
 ## Feladatok:
 Az alábbi feladatoknál törekedj az újonnan megismert eszközök használatára! Minden feladatot külön python állományban készíts el!<br>
 
-### 1. feladat
+#### 1. feladat
 
 Írj egy metódust, ami paraméterül vár egy szöveget és meghatározza, hogy hány különböző karakter szerepel a szövegben!
 Írj egy másik metódust, ami visszaadja, hogy melyik a leggyakrabban előforduló karakter!
