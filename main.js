@@ -1,5 +1,7 @@
 
 document.querySelector("#getDataBtn").addEventListener("click", startGetUsers)
+document.querySelector("#add-user-btn").addEventListener("click", addNewUser)
+
 function getServerData(url){
     let fetchOptions = {
         method: "GET",
@@ -38,4 +40,27 @@ function fillDataTable(data){
     }
     
 
+}
+
+
+function addNewUser(){
+    let nameIn = document.querySelector("#user-input").value;
+    let emailIn = document.querySelector("#email-input").value;
+
+    let fetchOptions = {
+        method: "POST",
+        mode: "cors",
+        cache: "no-cache",
+        headers:{
+            'Accept':'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({name:nameIn,email:emailIn})
+    }
+
+    let response = fetch("http://localhost:5000/users",fetchOptions).then(
+        response=>response.json()
+    );
+
+    startGetUsers();
 }

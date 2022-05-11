@@ -38,6 +38,13 @@ def get_all_users():
     
     return json.dumps(my_list)
 
+@app.route("/users", methods=["POST"])
+def add_new_user():
+    request_dict = request.get_json()
+    user_service.add_user(User(request_dict["name"],request_dict["email"]))
+    return json.dumps({"message":"ok"})
+
+
 if __name__ == '__main__':
     user_service.add_user(User("asd","asd@gmail.com")) 
     user_service.add_user(User("vsd","vsd@gmail.com"))
