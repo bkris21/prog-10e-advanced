@@ -15,7 +15,7 @@ A mai órán egy olyan alkalmazást fogunk készíteni, ahol az adatokat az inte
 ```python
 import requests
 
-API_KEY = "af886a6d919730deecd90777a6f18316"
+API_KEY = "my-api-key"
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
 
 city = input("Enter a city name: ")
